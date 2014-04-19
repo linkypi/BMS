@@ -1,0 +1,7 @@
+C:\Users\lenovo\Desktop\BMS\IDAL\bin\Release\BMS.IDAL.dll
+C:\Users\lenovo\Desktop\BMS\IDAL\bin\Release\BMS.IDAL.pdb
+C:\Users\lenovo\Desktop\BMS\IDAL\bin\Release\BMS.Model.dll
+C:\Users\lenovo\Desktop\BMS\IDAL\bin\Release\BMS.Model.pdb
+C:\Users\lenovo\Desktop\BMS\IDAL\obj\Release\BMS.IDAL.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\BMS\IDAL\obj\Release\BMS.IDAL.dll
+C:\Users\lenovo\Desktop\BMS\IDAL\obj\Release\BMS.IDAL.pdb

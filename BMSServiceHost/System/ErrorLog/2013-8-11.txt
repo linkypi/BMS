@@ -1,0 +1,495 @@
+
+*****************************       2013/8/11 0:05:28       **********************************
+System.Data.OleDb.OleDbException (0x80004005): 表 'Book' 己经被别的用户以独占方式打开， 或它已经被其它用户从用户界面打开，且不能被程序处理。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 OleDbHelper.AccessHelper.ExecuteScalarByString(String cmdText, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 207
+
+
+*****************************       2013/8/11 0:05:36       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'top30 *' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 0:08:14       **********************************
+System.Data.OleDb.OleDbException (0x80004005): 表 'Book' 己经被别的用户以独占方式打开， 或它已经被其它用户从用户界面打开，且不能被程序处理。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 OleDbHelper.AccessHelper.ExecuteScalarByString(String cmdText, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 207
+
+
+*****************************       2013/8/11 0:08:49       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 在查询表达式 'BID not in (select distinct top -30 BID from Book  order by PubDate desc )' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 0:22:57       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 在查询表达式 'BID not in (select distinct top -30 BID from Book  group by PubDate, Book.BID order by PubDate desc )' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 0:27:17       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 在查询表达式 'BID not in (select distinct top 0 BID from Book  group by PubDate, Book.BID order by PubDate desc )' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 0:34:01       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 在查询表达式 'BID not in (select distinct top 0 BID from Book  group by  Book.BID order by BID desc )' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 0:36:28       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 在查询表达式 'BID not in (select distinct top 0 BID from Book  group by  Book.BID order by BID desc )' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 11:07:15       **********************************
+System.Data.OleDb.OleDbException (0x80040E10): 至少一个参数没有被指定值。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 OleDbHelper.AccessHelper.ExecuteScalarByString(String cmdText, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 207
+
+
+*****************************       2013/8/11 11:07:15       **********************************
+System.Data.OleDb.OleDbException (0x80040E10): 至少一个参数没有被指定值。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 11:26:30       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): FROM 子句语法错误。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 11:26:48       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): FROM 子句语法错误。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 11:28:13       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): FROM 子句语法错误。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 11:38:23       **********************************
+System.IndexOutOfRangeException: TypeID
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.OleDb.OleDbDataReader.GetOrdinal(String name)
+   在 System.Data.OleDb.OleDbDataReader.get_Item(String name)
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 439
+
+
+*****************************       2013/8/11 11:38:45       **********************************
+System.IndexOutOfRangeException: TypeID
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.OleDb.OleDbDataReader.GetOrdinal(String name)
+   在 System.Data.OleDb.OleDbDataReader.get_Item(String name)
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 439
+
+
+*****************************       2013/8/11 11:42:55       **********************************
+System.IndexOutOfRangeException: TypeID
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.OleDb.OleDbDataReader.GetOrdinal(String name)
+   在 System.Data.OleDb.OleDbDataReader.get_Item(String name)
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 439
+
+
+*****************************       2013/8/11 11:43:35       **********************************
+System.IndexOutOfRangeException: TypeID
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.OleDb.OleDbDataReader.GetOrdinal(String name)
+   在 System.Data.OleDb.OleDbDataReader.get_Item(String name)
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 439
+
+
+*****************************       2013/8/11 11:44:55       **********************************
+System.IndexOutOfRangeException: TypeID
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.OleDb.OleDbDataReader.GetOrdinal(String name)
+   在 System.Data.OleDb.OleDbDataReader.get_Item(String name)
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 439
+
+
+*****************************       2013/8/11 11:46:08       **********************************
+System.Data.OleDb.OleDbException (0x80004005): 表 'Book' 己经被别的用户以独占方式打开， 或它已经被其它用户从用户界面打开，且不能被程序处理。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 OleDbHelper.AccessHelper.ExecuteScalarByString(String cmdText, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 207
+
+
+*****************************       2013/8/11 11:46:12       **********************************
+System.Data.OleDb.OleDbException (0x80004005): 表 'Book' 己经被别的用户以独占方式打开， 或它已经被其它用户从用户界面打开，且不能被程序处理。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 11:51:32       **********************************
+System.Data.OleDb.OleDbException (0x80004005): 表 'Book' 己经被别的用户以独占方式打开， 或它已经被其它用户从用户界面打开，且不能被程序处理。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 OleDbHelper.AccessHelper.ExecuteScalarByString(String cmdText, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 207
+
+
+*****************************       2013/8/11 11:51:36       **********************************
+System.Data.OleDb.OleDbException (0x80004005): 表 'Book' 己经被别的用户以独占方式打开， 或它已经被其它用户从用户界面打开，且不能被程序处理。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 11:51:50       **********************************
+System.Data.OleDb.OleDbException (0x80004005): 表 'Book' 己经被别的用户以独占方式打开， 或它已经被其它用户从用户界面打开，且不能被程序处理。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 OleDbHelper.AccessHelper.ExecuteScalarByString(String cmdText, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 207
+
+
+*****************************       2013/8/11 11:51:58       **********************************
+System.Data.OleDb.OleDbException (0x80004005): 表 'Book' 己经被别的用户以独占方式打开， 或它已经被其它用户从用户界面打开，且不能被程序处理。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 11:55:11       **********************************
+System.Data.OleDb.OleDbException (0x80004005): 表 'Book' 己经被别的用户以独占方式打开， 或它已经被其它用户从用户界面打开，且不能被程序处理。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 OleDbHelper.AccessHelper.ExecuteScalarByString(String cmdText, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 207
+
+
+*****************************       2013/8/11 11:55:15       **********************************
+System.Data.OleDb.OleDbException (0x80004005): 表 'Book' 己经被别的用户以独占方式打开， 或它已经被其它用户从用户界面打开，且不能被程序处理。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 11:55:44       **********************************
+System.IndexOutOfRangeException: TypeID
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.OleDb.OleDbDataReader.GetOrdinal(String name)
+   在 System.Data.OleDb.OleDbDataReader.get_Item(String name)
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 439
+
+
+*****************************       2013/8/11 12:02:10       **********************************
+System.IndexOutOfRangeException: TypeID
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.OleDb.OleDbDataReader.GetOrdinal(String name)
+   在 System.Data.OleDb.OleDbDataReader.get_Item(String name)
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 439
+
+
+*****************************       2013/8/11 12:02:30       **********************************
+System.IndexOutOfRangeException: TypeName
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.OleDb.OleDbDataReader.GetOrdinal(String name)
+   在 System.Data.OleDb.OleDbDataReader.get_Item(String name)
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 439
+
+
+*****************************       2013/8/11 12:02:51       **********************************
+System.IndexOutOfRangeException: TypeName
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.OleDb.OleDbDataReader.GetOrdinal(String name)
+   在 System.Data.OleDb.OleDbDataReader.get_Item(String name)
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 439
+
+
+*****************************       2013/8/11 12:03:22       **********************************
+System.IndexOutOfRangeException: TypeName
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.OleDb.OleDbDataReader.GetOrdinal(String name)
+   在 System.Data.OleDb.OleDbDataReader.get_Item(String name)
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 439
+
+
+*****************************       2013/8/11 12:07:01       **********************************
+System.IndexOutOfRangeException: TypeID
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.OleDb.OleDbDataReader.GetOrdinal(String name)
+   在 System.Data.OleDb.OleDbDataReader.get_Item(String name)
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 439
+
+
+*****************************       2013/8/11 12:15:09       **********************************
+System.IndexOutOfRangeException: TypeID
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.OleDb.OleDbDataReader.GetOrdinal(String name)
+   在 System.Data.OleDb.OleDbDataReader.get_Item(String name)
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 439
+
+
+*****************************       2013/8/11 12:17:58       **********************************
+System.IndexOutOfRangeException: TypeID
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.OleDb.OleDbDataReader.GetOrdinal(String name)
+   在 System.Data.OleDb.OleDbDataReader.get_Item(String name)
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 439
+
+
+*****************************       2013/8/11 12:22:55       **********************************
+System.Data.OleDb.OleDbException (0x80040E10): 至少一个参数没有被指定值。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 12:24:00       **********************************
+System.Data.OleDb.OleDbException (0x80040E10): 至少一个参数没有被指定值。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 12:28:01       **********************************
+System.IndexOutOfRangeException: TypeName
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.OleDb.OleDbDataReader.GetOrdinal(String name)
+   在 System.Data.OleDb.OleDbDataReader.get_Item(String name)
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 439
+
+
+*****************************       2013/8/11 12:28:27       **********************************
+System.IndexOutOfRangeException: TypeName
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.OleDb.OleDbDataReader.GetOrdinal(String name)
+   在 System.Data.OleDb.OleDbDataReader.get_Item(String name)
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 439
+
+
+*****************************       2013/8/11 12:31:41       **********************************
+System.Data.OleDb.OleDbException (0x80004005): 表 'TypeInfo' 己经被别的用户以独占方式打开， 或它已经被其它用户从用户界面打开，且不能被程序处理。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 12:31:59       **********************************
+System.Data.OleDb.OleDbException (0x80004005): 表 'Book' 己经被别的用户以独占方式打开， 或它已经被其它用户从用户界面打开，且不能被程序处理。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 OleDbHelper.AccessHelper.ExecuteScalarByString(String cmdText, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 207
+
+
+*****************************       2013/8/11 12:43:38       **********************************
+System.Data.OleDb.OleDbException (0x80004005): 表 'Book' 己经被别的用户以独占方式打开， 或它已经被其它用户从用户界面打开，且不能被程序处理。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 OleDbHelper.AccessHelper.ExecuteScalarByString(String cmdText, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 207
+
+
+*****************************       2013/8/11 12:43:42       **********************************
+System.Data.OleDb.OleDbException (0x80004005): 表 'Book' 己经被别的用户以独占方式打开， 或它已经被其它用户从用户界面打开，且不能被程序处理。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 12:44:22       **********************************
+System.Data.OleDb.OleDbException (0x80040E10): 至少一个参数没有被指定值。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 12:44:33       **********************************
+System.Data.OleDb.OleDbException (0x80040E10): 至少一个参数没有被指定值。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 12:45:03       **********************************
+System.Data.OleDb.OleDbException (0x80040E10): 至少一个参数没有被指定值。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 12:45:25       **********************************
+System.Data.OleDb.OleDbException (0x80040E10): 至少一个参数没有被指定值。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/11 12:46:31       **********************************
+System.Data.OleDb.OleDbException (0x80040E10): 至少一个参数没有被指定值。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 OleDbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+

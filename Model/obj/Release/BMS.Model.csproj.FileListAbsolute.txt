@@ -1,0 +1,4 @@
+C:\Users\lenovo\Desktop\BMS\Model\bin\Release\BMS.Model.dll
+C:\Users\lenovo\Desktop\BMS\Model\bin\Release\BMS.Model.pdb
+C:\Users\lenovo\Desktop\BMS\Model\obj\Release\BMS.Model.dll
+C:\Users\lenovo\Desktop\BMS\Model\obj\Release\BMS.Model.pdb

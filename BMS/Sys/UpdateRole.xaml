@@ -1,0 +1,77 @@
+﻿<Page x:Class="BMS.Sys.UpdateRole"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d"  xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"  
+      
+	Title="UpdateRole">
+
+    <telerik:RadBusyIndicator  Name="busy">
+        <DockPanel>
+            
+            <DockPanel DockPanel.Dock="Top">
+                <telerik:RadMenu x:Name="radMenu"   Background="LightBlue" DockPanel.Dock="Top" ClickToOpen="False" FontSize="12" >
+                    <telerik:RadMenuItem x:Name="Save" Click="Save_Click" Header="保存"/>
+                    <telerik:RadMenuItem x:Name="Delete" Click="Del_Click" Header="删除"/>
+                </telerik:RadMenu>
+            </DockPanel>
+            <DockPanel DockPanel.Dock="Top" Height="26">
+                <StackPanel Orientation="Horizontal" Margin="3,2">
+                    <TextBlock Width="80" Text="角色名称"></TextBlock>
+                    <TextBox Width="120" x:Name="roleName"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="3,2">
+                    <TextBlock Width="80" Text="备注"></TextBlock>
+                    <TextBox Width="120" x:Name="note"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="3,2">
+                   
+                    <telerik:RadButton CornerRadius="3" Width="60" Name="search" Click="search_Click" Content="查  询"></telerik:RadButton>
+                </StackPanel>
+            </DockPanel>
+            <DockPanel DockPanel.Dock="Top">
+                <DockPanel  x:Name="panel" DockPanel.Dock="Bottom" HorizontalAlignment="Stretch" FlowDirection="LeftToRight" >
+                    <telerik:RadNumericUpDown  x:Name="pagesize" DockPanel.Dock="Right" ValueChanged="pagesize_ValueChanged" Minimum="1" Value="30" Width="40" NumberDecimalDigits="0"/>
+                    <telerik:RadDataPager  x:Name="page"   DockPanel.Dock="Left"   PageIndexChanged="page_PageIndexChanged"
+                     PageSize="30" AutoEllipsisMode="Both"  DisplayMode="All" NumericButtonCount="10"  Height="30" />
+
+                </DockPanel>
+                <telerik:RadGridView x:Name="GridList"  GridLinesVisibility="Both"  DockPanel.Dock="Top" ShowColumnHeaders="True" CanUserInsertRows="False" 
+                SelectionChanged="GridList_SelectionChanged" ShowGroupPanel="False" RowIndicatorVisibility="Collapsed" IsFilteringAllowed="True" 
+                 MinHeight="100" MaxHeight="150"  CanUserFreezeColumns="False" IsReadOnly="True"
+                 AutoGenerateColumns="False" IsBusy="False" SelectionMode="Extended"  CanUserSortColumns="False" CanUserReorderColumns="False">
+
+                    <telerik:RadGridView.Columns>
+                        <telerik:GridViewSelectColumn />
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding RoleName, Mode=OneWay}"  Header="角色名称" Width="auto" IsReadOnly="True" HeaderTextAlignment="Center" IsGroupable="False" IsFilterable="False"/>
+                        <telerik:GridViewDataColumn DataMemberBinding="{Binding Note, Mode=OneWay}"  Header="备注" Width="auto" IsReadOnly="True" HeaderTextAlignment="Center" IsGroupable="False" IsFilterable="False"/>
+                      
+                    </telerik:RadGridView.Columns>
+                </telerik:RadGridView>
+            </DockPanel>
+            <DockPanel DockPanel.Dock="Top" Height="26">
+                <StackPanel Orientation="Horizontal" Margin="3,2">
+                    <TextBlock Width="80" Text="角色名称"></TextBlock>
+                    <TextBox Width="120" x:Name="updroleName"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="3,2">
+                    <TextBlock Width="80" Text="备注"></TextBlock>
+                    <TextBox Width="120" x:Name="updnote"></TextBox>
+                </StackPanel>
+            </DockPanel>
+            <DockPanel DockPanel.Dock="Bottom" >
+
+                <DockPanel DockPanel.Dock="Bottom">
+                    <telerik:RadButton  CornerRadius="3" Content="全 选" Width="80" Height="23" Margin="5,0" DockPanel.Dock="Left" x:Name="SelectAll" Click="SelectAll_Click_1"/>
+                    <telerik:RadButton  CornerRadius="3"   Content="反 选" Width="80" Height="23" Margin="5,0"  DockPanel.Dock="Left"  Click="UnSelect"/>
+                </DockPanel>
+
+                <telerik:RadTreeView DockPanel.Dock="Top" Background="White"   SelectionMode="Single" IsLineEnabled="True"
+				    ItemsOptionListType="CheckList" IsOptionElementsEnabled="True"      
+				    IsRootLinesEnabled="True" x:Name="RadTreeView1" IsTriStateMode="True" />
+
+            </DockPanel>
+        </DockPanel>
+    </telerik:RadBusyIndicator>
+</Page>

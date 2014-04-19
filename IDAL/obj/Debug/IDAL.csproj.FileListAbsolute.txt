@@ -1,0 +1,7 @@
+C:\Users\lenovo\Desktop\BMS\IDAL\obj\Debug\IDAL.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\BMS\IDAL\bin\Debug\IDAL.dll
+C:\Users\lenovo\Desktop\BMS\IDAL\bin\Debug\IDAL.pdb
+C:\Users\lenovo\Desktop\BMS\IDAL\bin\Debug\Model.dll
+C:\Users\lenovo\Desktop\BMS\IDAL\bin\Debug\Model.pdb
+C:\Users\lenovo\Desktop\BMS\IDAL\obj\Debug\IDAL.dll
+C:\Users\lenovo\Desktop\BMS\IDAL\obj\Debug\IDAL.pdb

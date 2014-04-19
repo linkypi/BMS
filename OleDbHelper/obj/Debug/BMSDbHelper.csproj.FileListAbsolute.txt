@@ -1,0 +1,12 @@
+D:\BMS\OleDbHelper\bin\Debug\BMS.OleDbHelper.dll
+D:\BMS\OleDbHelper\bin\Debug\BMS.OleDbHelper.pdb
+D:\BMS\OleDbHelper\obj\Debug\BMS.OleDbHelper.dll
+D:\BMS\OleDbHelper\obj\Debug\BMS.OleDbHelper.pdb
+C:\Users\lenovo\Desktop\BMS\OleDbHelper\bin\Debug\BMS.OleDbHelper.dll
+C:\Users\lenovo\Desktop\BMS\OleDbHelper\bin\Debug\BMS.OleDbHelper.pdb
+C:\Users\lenovo\Desktop\BMS\OleDbHelper\obj\Debug\BMS.OleDbHelper.dll
+C:\Users\lenovo\Desktop\BMS\OleDbHelper\obj\Debug\BMS.OleDbHelper.pdb
+C:\Users\Administrator\Desktop\BMS\BMS\OleDbHelper\bin\Debug\BMS.OleDbHelper.dll
+C:\Users\Administrator\Desktop\BMS\BMS\OleDbHelper\bin\Debug\BMS.OleDbHelper.pdb
+C:\Users\Administrator\Desktop\BMS\BMS\OleDbHelper\obj\Debug\BMS.OleDbHelper.dll
+C:\Users\Administrator\Desktop\BMS\BMS\OleDbHelper\obj\Debug\BMS.OleDbHelper.pdb

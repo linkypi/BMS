@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="BMS.MyControl.MyComboBox"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d"   xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+             d:DesignHeight="20" d:DesignWidth="140">
+    <DockPanel >
+        <DockPanel DockPanel.Dock="Top" Height="20" FlowDirection="LeftToRight">
+            <Button DockPanel.Dock="Right" Name="dropDown" Width="25" Click="dropDown_Click">
+                <!--BorderBrush="Transparent"-->
+                <Button.Content >
+                    <Image Source="/Image/comb_16_2.png" Margin="0 0 0 0"  Height="18" Width="16"></Image>
+                </Button.Content>
+            </Button>
+            <TextBox DockPanel.Dock="Left"  Name="Txt" Padding="0 2 0 0" Height="22" BorderBrush="Transparent"></TextBox>
+        </DockPanel>
+
+        <DockPanel DockPanel.Dock="Bottom">
+            <ListBox Width="auto"  Name="listBox"  Margin="0 0 0 0" DockPanel.Dock="Top"  BorderThickness="1"></ListBox>
+        </DockPanel>
+
+    </DockPanel>
+</UserControl>

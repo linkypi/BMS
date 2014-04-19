@@ -1,0 +1,15 @@
+C:\Users\lenovo\Desktop\BMS\DALFactory\bin\Debug\DALFactory.dll
+C:\Users\lenovo\Desktop\BMS\DALFactory\bin\Debug\DALFactory.pdb
+C:\Users\lenovo\Desktop\BMS\DALFactory\obj\Debug\DALFactory.dll
+C:\Users\lenovo\Desktop\BMS\DALFactory\obj\Debug\DALFactory.pdb
+C:\Users\lenovo\Desktop\BMS\DALFactory\bin\Debug\DAL.dll
+C:\Users\lenovo\Desktop\BMS\DALFactory\bin\Debug\SqlDAL.dll
+C:\Users\lenovo\Desktop\BMS\DALFactory\bin\Debug\IDAL.dll
+C:\Users\lenovo\Desktop\BMS\DALFactory\bin\Debug\Model.dll
+C:\Users\lenovo\Desktop\BMS\DALFactory\bin\Debug\OleDbHelper.dll
+C:\Users\lenovo\Desktop\BMS\DALFactory\bin\Debug\DAL.pdb
+C:\Users\lenovo\Desktop\BMS\DALFactory\bin\Debug\SqlDAL.pdb
+C:\Users\lenovo\Desktop\BMS\DALFactory\bin\Debug\IDAL.pdb
+C:\Users\lenovo\Desktop\BMS\DALFactory\bin\Debug\Model.pdb
+C:\Users\lenovo\Desktop\BMS\DALFactory\bin\Debug\OleDbHelper.pdb
+C:\Users\lenovo\Desktop\BMS\DALFactory\obj\Debug\DALFactory.csprojResolveAssemblyReference.cache

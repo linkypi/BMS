@@ -1,0 +1,808 @@
+
+*****************************       2013/8/29 0:00:41       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): UPDATE 语句的语法错误。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 BMS.DbHelper.AccessHelper.ExecuteScalar(OleDbTransaction trans, CommandType cmdType, String cmdText, Dictionary`2 paramsDict, Object result) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 311
+
+
+*****************************       2013/8/29 0:07:24       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1  delete from RoleMenuInfo where RoleID=1  insert into RoleMenuInfo(RoleID,MenuID)select 1,4 union select 1,14 union select 1,1 union select 1,2 union select 1,3 union select 1,8 union select 1,9 union select 1,5 union select 1,10 union select 1,1' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 BMS.DbHelper.AccessHelper.ExecuteScalar(OleDbTransaction trans, CommandType cmdType, String cmdText, Dictionary`2 paramsDict, Object result) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 311
+
+
+*****************************       2013/8/29 0:19:37       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1  delete from RoleMenuInfo where RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4) insert into RoleMenuInfo(RoleID,MenuID) values( 1,14) insert into RoleMenuInfo(RoleID,MenuID) values( 1,1) insert into RoleMenuInfo(RoleID,MenuID) value' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 BMS.DbHelper.AccessHelper.ExecuteScalar(OleDbTransaction trans, CommandType cmdType, String cmdText, Dictionary`2 paramsDict, Object result) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 311
+
+
+*****************************       2013/8/29 0:26:52       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1  delete from RoleMenuInfo where RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 BMS.DbHelper.AccessHelper.ExecuteScalar(OleDbTransaction trans, CommandType cmdType, String cmdText, Dictionary`2 paramsDict, Object result) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 311
+
+
+*****************************       2013/8/29 0:31:35       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1  delete from RoleMenuInfo where RoleID=1' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 BMS.DbHelper.AccessHelper.ExecuteScalar(OleDbTransaction trans, CommandType cmdType, String cmdText, Dictionary`2 paramsDict, Object result) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 311
+
+
+*****************************       2013/8/29 0:33:09       **********************************
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BMS.DbHelper.AccessHelper.ExecuteScalar(OleDbTransaction trans, CommandType cmdType, String cmdText, Dictionary`2 paramsDict, Object result) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 318
+
+
+*****************************       2013/8/29 0:35:22       **********************************
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BMS.DbHelper.AccessHelper.ExecuteScalar(OleDbTransaction trans, CommandType cmdType, String cmdText, Dictionary`2 paramsDict, Object result) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 318
+
+
+*****************************       2013/8/29 0:35:38       **********************************
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BMS.DbHelper.AccessHelper.ExecuteScalar(OleDbTransaction trans, CommandType cmdType, String cmdText, Dictionary`2 paramsDict, Object result) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 318
+
+
+*****************************       2013/8/29 0:38:03       **********************************
+System.InvalidOperationException: 如果分配给命令的连接位于本地挂起事务中，ExecuteScalar 要求命令拥有事务。命令的 Transaction 属性尚未初始化。
+   在 System.Data.OleDb.OleDbConnectionInternal.ValidateTransaction(OleDbTransaction transaction, String method)
+   在 System.Data.OleDb.OleDbConnection.ValidateTransaction(OleDbTransaction transaction, String method)
+   在 System.Data.OleDb.OleDbCommand.ValidateConnectionAndTransaction(String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 BMS.DbHelper.AccessHelper.ExecuteScalar(OleDbTransaction trans, CommandType cmdType, String cmdText, Dictionary`2 paramsDict, Object result) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 311
+
+
+*****************************       2013/8/29 0:38:56       **********************************
+System.InvalidOperationException: 如果分配给命令的连接位于本地挂起事务中，ExecuteScalar 要求命令拥有事务。命令的 Transaction 属性尚未初始化。
+   在 System.Data.OleDb.OleDbConnectionInternal.ValidateTransaction(OleDbTransaction transaction, String method)
+   在 System.Data.OleDb.OleDbConnection.ValidateTransaction(OleDbTransaction transaction, String method)
+   在 System.Data.OleDb.OleDbCommand.ValidateConnectionAndTransaction(String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 BMS.DbHelper.AccessHelper.ExecuteScalar(OleDbTransaction trans, CommandType cmdType, String cmdText, Dictionary`2 paramsDict, Object result) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 311
+
+
+*****************************       2013/8/29 0:40:33       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:40:35       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:40:36       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:40:37       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:40:39       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:40:40       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:40:41       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:40:43       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:40:44       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:40:44       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:40:46       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:40:47       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:42:12       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:42:12       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:42:12       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:42:12       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:42:12       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:42:12       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:42:12       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:42:12       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:42:12       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:42:12       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:42:12       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:42:12       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:47:59       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:48:02       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:48:02       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:48:02       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:48:02       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:48:02       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:48:02       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:48:02       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:48:02       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:48:02       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:48:02       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 0:48:02       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 1:14:49       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 1:14:49       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 1:14:49       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 1:14:49       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 1:14:49       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 1:14:49       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 1:14:49       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 1:14:49       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 1:14:49       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 1:14:49       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 1:14:49       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleID=1 insert into RoleMenuInfo(RoleID,MenuID) values( 1,4)' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.AccessHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 413
+
+
+*****************************       2013/8/29 21:23:11       **********************************
+System.Data.SqlClient.SqlException (0x80131904): 列名 'BID' 不明确。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader()
+   在 BMS.DbHelper.SqlHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\SqlHelper.cs:行号 418
+ClientConnectionId:fbad7464-9114-4426-9e45-b3511de0e463
+
+
+*****************************       2013/8/29 21:25:53       **********************************
+System.Data.SqlClient.SqlException (0x80131904): 列名 'BID' 不明确。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader()
+   在 BMS.DbHelper.SqlHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\SqlHelper.cs:行号 418
+ClientConnectionId:9c1ba026-8ce3-4361-9c9c-b99442519a2b
+
+
+*****************************       2013/8/29 21:43:39       **********************************
+System.IndexOutOfRangeException: IsReturn
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   在 System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   在 BMS.DbHelper.SqlHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\SqlHelper.cs:行号 439
+
+
+*****************************       2013/8/29 21:43:42       **********************************
+System.IndexOutOfRangeException: IsReturn
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   在 System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   在 BMS.DbHelper.SqlHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\SqlHelper.cs:行号 439
+
+
+*****************************       2013/8/29 21:43:42       **********************************
+System.IndexOutOfRangeException: IsReturn
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   在 System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   在 BMS.DbHelper.SqlHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\SqlHelper.cs:行号 439
+
+
+*****************************       2013/8/29 21:43:43       **********************************
+System.IndexOutOfRangeException: IsReturn
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   在 System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   在 BMS.DbHelper.SqlHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\SqlHelper.cs:行号 439
+
+
+*****************************       2013/8/29 21:43:43       **********************************
+System.IndexOutOfRangeException: IsReturn
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   在 System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   在 BMS.DbHelper.SqlHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\SqlHelper.cs:行号 439
+
+
+*****************************       2013/8/29 21:43:53       **********************************
+System.IndexOutOfRangeException: IsReturn
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   在 System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   在 BMS.DbHelper.SqlHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\SqlHelper.cs:行号 439
+
+
+*****************************       2013/8/29 21:45:14       **********************************
+System.IndexOutOfRangeException: IsReturn
+   在 System.Data.ProviderBase.FieldNameLookup.GetOrdinal(String fieldName)
+   在 System.Data.SqlClient.SqlDataReader.GetOrdinal(String name)
+   在 System.Data.SqlClient.SqlDataReader.get_Item(String name)
+   在 BMS.DbHelper.SqlHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\SqlHelper.cs:行号 439
+
+
+*****************************       2013/8/29 22:50:40       **********************************
+System.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'UserID'，表 'BMS.dbo.BorowInfo'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.SqlHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\SqlHelper.cs:行号 378
+ClientConnectionId:e7a4bd0e-4305-4def-bcfb-cdc8dce16ed2
+
+
+*****************************       2013/8/29 22:51:28       **********************************
+System.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'UserID'，表 'BMS.dbo.BorowInfo'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.SqlHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\SqlHelper.cs:行号 378
+ClientConnectionId:950cf6d8-ebac-44a0-840d-b3abbbb4f93f
+
+
+*****************************       2013/8/29 22:52:00       **********************************
+System.Data.SqlClient.SqlException (0x80131904): 不能将值 NULL 插入列 'UserID'，表 'BMS.dbo.BorowInfo'；列不允许有 Null 值。INSERT 失败。
+语句已终止。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteNonQueryTds(String methodName, Boolean async, Int32 timeout)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 BMS.DbHelper.SqlHelper.ExecuteNonQuery(String sqlStr, CommandType cmdType, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\SqlHelper.cs:行号 378
+ClientConnectionId:e7ab4d0c-7582-4c93-b1be-cb64aa491ef0
+
+
+*****************************       2013/8/29 22:58:48       **********************************
+System.Data.SqlClient.SqlException (0x80131904): 列名 '猥琐' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 BMS.DbHelper.SqlHelper.ExecuteScalarByString(String cmdText, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\SqlHelper.cs:行号 207
+ClientConnectionId:9ebdd59e-1ceb-440a-8714-a33f4fbc7e39
+
+
+*****************************       2013/8/29 22:58:48       **********************************
+System.Data.SqlClient.SqlException (0x80131904): 列名 '猥琐' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader()
+   在 BMS.DbHelper.SqlHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\SqlHelper.cs:行号 418
+ClientConnectionId:e526c287-4ca6-4ccf-b41c-4c79a8276804
+
+
+*****************************       2013/8/29 22:58:55       **********************************
+System.Data.SqlClient.SqlException (0x80131904): 列名 '猥琐' 无效。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean asyncWrite)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteScalar()
+   在 BMS.DbHelper.SqlHelper.ExecuteScalarByString(String cmdText, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\SqlHelper.cs:行号 207
+ClientConnectionId:e526c287-4ca6-4ccf-b41c-4c79a8276804
+
+
+*****************************       2013/8/29 22:59:31       **********************************
+System.Runtime.InteropServices.COMException (0x80070006): 句柄无效。 (异常来自 HRESULT:0x80070006 (E_HANDLE))
+   在 System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   在 System.Runtime.InteropServices.Marshal.ThrowExceptionForHR(Int32 errorCode)
+   在 Win32NativeMethods.IsTokenRestrictedWrapper(IntPtr token)
+   在 System.Data.ProviderBase.DbConnectionPoolIdentity.GetCurrent()
+   在 System.Data.ProviderBase.DbConnectionPoolGroup.GetConnectionPool(DbConnectionFactory connectionFactory)
+   在 System.Data.ProviderBase.DbConnectionFactory.GetConnectionPool(DbConnection owningObject, DbConnectionPoolGroup connectionPoolGroup)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 BMS.DbHelper.SqlHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\SqlHelper.cs:行号 417
+

@@ -1,0 +1,195 @@
+
+*****************************       2013/8/28 20:47:17       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 在查询表达式 'bid in (select top 30a.bid from
+              (select top 30 BID from Book  where 1=1  order by BID desc) as a order by bid
+  )' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 BMS.DbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/28 22:44:54       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 在查询表达式 'RoleID not in(select top   0 RoleID from RoleInfo where 1=1 )' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 BMS.DbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/28 22:46:56       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 在查询表达式 'RoleID not in(select top   0 RoleID from RoleInfo where 1=1 )' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 BMS.DbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/28 22:48:01       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 在查询表达式 'RoleID not in(select top   0 RoleID from RoleInfo where 1=1 )' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 BMS.DbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/28 22:49:08       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 在查询表达式 'RoleID not in(select top   0 RoleID from RoleInfo where 1=1 )' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 BMS.DbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/28 22:50:52       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 在查询表达式 'RoleID not in(select top   0 RoleID from RoleInfo where 1=1 )' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 BMS.DbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/28 23:01:28       **********************************
+System.Data.OleDb.OleDbException (0x80040E10): 至少一个参数没有被指定值。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 BMS.DbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/28 23:03:02       **********************************
+System.Data.OleDb.OleDbException (0x80040E10): 至少一个参数没有被指定值。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 BMS.DbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/28 23:04:59       **********************************
+System.Data.OleDb.OleDbException (0x80040E10): 至少一个参数没有被指定值。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 BMS.DbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/28 23:07:32       **********************************
+System.Data.OleDb.OleDbException (0x80040E10): 至少一个参数没有被指定值。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 BMS.DbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/28 23:10:40       **********************************
+System.Data.OleDb.OleDbException (0x80040E10): 至少一个参数没有被指定值。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 BMS.DbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/28 23:11:38       **********************************
+System.Data.OleDb.OleDbException (0x80040E10): 至少一个参数没有被指定值。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 BMS.DbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/28 23:20:48       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 在查询表达式 'UserID not in(select top 0 UserID  from UserInfo where 1=1 )' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReader()
+   在 BMS.DbHelper.AccessHelper.GetList[T](String cmdText, CommandType cmdType, Dictionary`2 paramsValue, Dictionary`2 returnValueBinding) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 418
+
+
+*****************************       2013/8/28 23:29:09       **********************************
+System.InvalidOperationException: “Microsoft.ACE.OLEDB.12.0”提供程序不支持 ITransactionLocal 接口。本地事务不可用于当前提供程序。
+   在 System.Data.OleDb.OleDbConnectionInternal.EnlistTransactionInternal(Transaction transaction)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BMS.DbHelper.AccessHelper.ExecuteScalarByString(String cmdText, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 206
+
+
+*****************************       2013/8/28 23:30:07       **********************************
+System.InvalidOperationException: “Microsoft.ACE.OLEDB.12.0”提供程序不支持 ITransactionLocal 接口。本地事务不可用于当前提供程序。
+   在 System.Data.OleDb.OleDbConnectionInternal.EnlistTransactionInternal(Transaction transaction)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BMS.DbHelper.AccessHelper.ExecuteScalarByString(String cmdText, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 206
+
+
+*****************************       2013/8/28 23:31:24       **********************************
+System.InvalidOperationException: “Microsoft.ACE.OLEDB.12.0”提供程序不支持 ITransactionLocal 接口。本地事务不可用于当前提供程序。
+   在 System.Data.OleDb.OleDbConnectionInternal.EnlistTransactionInternal(Transaction transaction)
+   在 System.Data.OleDb.OleDbConnection.Open()
+   在 BMS.DbHelper.AccessHelper.ExecuteScalarByString(String cmdText, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 206
+
+
+*****************************       2013/8/28 23:44:07       **********************************
+System.Data.OleDb.OleDbException (0x80040E14): 语法错误 (操作符丢失) 在查询表达式 'RoleName='管理员' and RoleID !=1' 中。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteScalar()
+   在 BMS.DbHelper.AccessHelper.ExecuteScalarByString(String cmdText, Dictionary`2 paramsDict) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 207
+
+
+*****************************       2013/8/28 23:48:07       **********************************
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 BMS.DbHelper.AccessHelper.ExecuteScalar(OleDbTransaction trans, CommandType cmdType, String cmdText, OleDbParameter[] commandParameters) 位置 C:\Users\lenovo\Desktop\BMS\OleDbHelper\AccessHelper.cs:行号 285
+

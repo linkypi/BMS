@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/BMS.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BMS.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:10211/BMSService.svc/BMSService/metadata?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfBorowInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BorowInfo" nillable="true" type="tns:BorowInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBorowInfo" nillable="true" type="tns:ArrayOfBorowInfo" />
+  <xs:complexType name="BorowInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BAuthor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BID" type="xs:int" />
+      <xs:element minOccurs="0" name="BPrice" type="xs:double" />
+      <xs:element minOccurs="0" name="BTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="BTypeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BookName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BorowDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="BorowID" type="xs:int" />
+      <xs:element minOccurs="0" name="Borower" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsReturn" type="xs:boolean" />
+      <xs:element minOccurs="0" name="OutLine" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PubDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Publisher" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ReturnDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="SMPosition" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SerialNum" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BorowInfo" nillable="true" type="tns:BorowInfo" />
+  <xs:complexType name="ArrayOfMenuInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MenuInfo" nillable="true" type="tns:MenuInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMenuInfo" nillable="true" type="tns:ArrayOfMenuInfo" />
+  <xs:complexType name="MenuInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClassName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Image" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MenuID" type="xs:int" />
+      <xs:element minOccurs="0" name="MenuName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Order" type="xs:int" />
+      <xs:element minOccurs="0" name="Parent" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MenuInfo" nillable="true" type="tns:MenuInfo" />
+  <xs:complexType name="ArrayOfResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Result" nillable="true" type="tns:Result" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfResult" nillable="true" type="tns:ArrayOfResult" />
+  <xs:complexType name="Result">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Arr" nillable="true" type="q1:ArrayOfanyType" />
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Obj" nillable="true" type="xs:anyType" />
+      <xs:element minOccurs="0" name="ReturnValue" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Result" nillable="true" type="tns:Result" />
+  <xs:complexType name="ArrayOfRoleInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RoleInfo" nillable="true" type="tns:RoleInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRoleInfo" nillable="true" type="tns:ArrayOfRoleInfo" />
+  <xs:complexType name="RoleInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoleID" type="xs:int" />
+      <xs:element minOccurs="0" name="RoleName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RoleInfo" nillable="true" type="tns:RoleInfo" />
+  <xs:complexType name="ArrayOfRoleMenuInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RoleMenuInfo" nillable="true" type="tns:RoleMenuInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRoleMenuInfo" nillable="true" type="tns:ArrayOfRoleMenuInfo" />
+  <xs:complexType name="RoleMenuInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="MenuID" type="xs:int" />
+      <xs:element minOccurs="0" name="RoleID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RoleMenuInfo" nillable="true" type="tns:RoleMenuInfo" />
+  <xs:complexType name="ArrayOfTypeInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="TypeInfo" nillable="true" type="tns:TypeInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfTypeInfo" nillable="true" type="tns:ArrayOfTypeInfo" />
+  <xs:complexType name="TypeInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BTypeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TypeID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="TypeInfo" nillable="true" type="tns:TypeInfo" />
+  <xs:complexType name="ArrayOfUserInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserInfo" nillable="true" type="tns:UserInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserInfo" nillable="true" type="tns:ArrayOfUserInfo" />
+  <xs:complexType name="UserInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Pwd" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RoleID" type="xs:int" />
+      <xs:element minOccurs="0" name="RoleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserInfo" nillable="true" type="tns:UserInfo" />
+  <xs:complexType name="ArrayOfSysMethodInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SysMethodInfo" nillable="true" type="tns:SysMethodInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSysMethodInfo" nillable="true" type="tns:ArrayOfSysMethodInfo" />
+  <xs:complexType name="SysMethodInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Dao" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MenuID" type="xs:int" />
+      <xs:element minOccurs="0" name="MethodID" type="xs:int" />
+      <xs:element minOccurs="0" name="MethodName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SysMethodInfo" nillable="true" type="tns:SysMethodInfo" />
+  <xs:complexType name="ArrayOfBookKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="BookKey" nillable="true" type="tns:BookKey" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBookKey" nillable="true" type="tns:ArrayOfBookKey" />
+  <xs:complexType name="BookKey">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BID" type="xs:int" />
+      <xs:element minOccurs="0" name="BKey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BookKey" nillable="true" type="tns:BookKey" />
+  <xs:complexType name="Book">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BAuthor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BID" type="xs:int" />
+      <xs:element minOccurs="0" name="BPrice" type="xs:double" />
+      <xs:element minOccurs="0" name="BTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="BTypeName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BookName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsBorow" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Note" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OutLine" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PubDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Publisher" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SMPosition" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SerialNum" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Book" nillable="true" type="tns:Book" />
+  <xs:complexType name="SearchModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AllPages" type="xs:int" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="Conditions" nillable="true" type="q2:ArrayOfKeyValueOfstringanyType" />
+      <xs:element minOccurs="0" name="CurrentPage" type="xs:int" />
+      <xs:element minOccurs="0" name="PageSize" type="xs:int" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:anyType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SearchModel" nillable="true" type="tns:SearchModel" />
+  <xs:complexType name="ArrayOfBook">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Book" nillable="true" type="tns:Book" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfBook" nillable="true" type="tns:ArrayOfBook" />
+</xs:schema>

@@ -1,0 +1,213 @@
+﻿<Window x:Class="BMS.Main"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d"   xmlns:BMS="clr-namespace:BMS.Common" d:DesignWidth="600"
+       xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+	 xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+         Background="{x:Null}"    MouseLeftButtonDown="DragWindow" 
+        WindowStyle="None"  WindowStartupLocation="CenterScreen" AllowsTransparency="True"
+	Title="Main">
+    <Window.Resources>
+        <Style x:Key="CloseButton" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid Background="Transparent" Width="14" Height="14" >
+
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal" />
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames
+													Storyboard.TargetProperty="(UIElement.Visibility)"
+													Storyboard.TargetName="FocusEllipse">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Visible</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ColorAnimation Duration="0" To="#FFDC3030"
+													Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
+													Storyboard.TargetName="FocusEllipse" />
+                                            <ColorAnimation Duration="0" To="White"
+													Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)"
+													Storyboard.TargetName="path" />
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames
+													Storyboard.TargetProperty="(UIElement.Visibility)"
+													Storyboard.TargetName="FocusEllipse">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Visible</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ColorAnimation Duration="0" To="Black"
+													Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
+													Storyboard.TargetName="FocusEllipse" />
+                                            <ColorAnimation Duration="0" To="White"
+													Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)"
+													Storyboard.TargetName="path" />
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled" />
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FocusStates">
+                                    <VisualState x:Name="Focused" />
+                                    <VisualState x:Name="Unfocused" />
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Ellipse x:Name="FocusEllipse" Fill="#FFF13535" Visibility="Collapsed" />
+
+                            <Path x:Name="path" Data="M0,0 L6,6 M6, 0 L0,6"  Stroke="#FF898888"
+									HorizontalAlignment="Center" VerticalAlignment="Center"
+									StrokeThickness="1" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="AddButton" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid Background="Transparent" Width="14" Height="14">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal" />
+                                    <VisualState x:Name="MouseOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames
+													Storyboard.TargetProperty="(UIElement.Visibility)"
+													Storyboard.TargetName="FocusEllipse">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Visible</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ColorAnimation Duration="0" To="#FF1CC81F"
+													Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
+													Storyboard.TargetName="FocusEllipse" />
+                                            <ColorAnimation Duration="0" To="White"
+													Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)"
+													Storyboard.TargetName="path" />
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Pressed">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames
+													Storyboard.TargetProperty="(UIElement.Visibility)"
+													Storyboard.TargetName="FocusEllipse">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Visible</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ColorAnimation Duration="0" To="Black"
+													Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)"
+													Storyboard.TargetName="FocusEllipse" />
+                                            <ColorAnimation Duration="0" To="White"
+													Storyboard.TargetProperty="(Shape.Stroke).(SolidColorBrush.Color)"
+													Storyboard.TargetName="path" />
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Disabled" />
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FocusStates">
+                                    <VisualState x:Name="Focused" />
+                                    <VisualState x:Name="Unfocused" />
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Ellipse x:Name="FocusEllipse" Fill="#FFF13535" Visibility="Collapsed" />
+                            <Path x:Name="path" Data="M4,0 L4,8 M0, 4 L8,4" Stroke="#FF898888"
+									HorizontalAlignment="Center" VerticalAlignment="Center"
+									StrokeThickness="1" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="telerik:RadTabItem">
+            <Setter Property="HeaderTemplate">
+                <Setter.Value>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                            <TextBlock Text="{Binding }" Margin="5,5,0,0" />
+                            <Button  BMS:RoutedEventHelper.EnableRoutedClick="True" 
+                               Width="16" Height="16" Background="Transparent" BorderBrush="Transparent"
+					           	Margin="5,5,0,0" ToolTipService.ToolTip="Remove item" >
+                                <Button.Content>
+                                    <Image Source="/BMS;component/Image/close_16.png" />
+                                </Button.Content>
+                            </Button>
+                        </StackPanel>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>
+            <!--<Setter Property="Content">Command="{Binding RemoveItemCommand}" 
+                <Setter.Value>
+                    <DataTemplate>
+                        <Frame JournalOwnership="OwnsJournal" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" NavigationUIVisibility="Hidden"
+                        BorderThickness="1" Source="{Binding Tag}" >
+                        </Frame>
+                    </DataTemplate>
+                </Setter.Value>
+            </Setter>-->
+        </Style>
+
+        </Window.Resources>
+
+    <telerik:RadBusyIndicator  Name="busy">
+        <Border  CornerRadius="10,10,10,10"  Background="LightBlue" Height="Auto" BorderBrush="Teal" BorderThickness="1">
+        <DockPanel FlowDirection="LeftToRight">
+            <DockPanel DockPanel.Dock="Top" Height="25" Margin="0 3 0 0"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <Button DockPanel.Dock="Right" Margin=" 0 0 5 0" Click="Button_Click" BorderBrush="Transparent">
+                        <Button.Content>
+                            <!--<TextBlock Text="T"></TextBlock>-->
+                            <Image  Source="Image/2.png" Width="20" Height="20"></Image>
+                        </Button.Content>
+                    </Button>
+                
+                    <telerik:RadToolBar Margin="0 0 25 0" Background="LightBlue"  Width="120"  Height="25" toolkit:DockPanel.Dock="Right"   VerticalAlignment="Stretch" HorizontalAlignment="Stretch" OverflowButtonVisibility="Collapsed" >
+                      <telerik:RadButton   Content="退出系统"    x:Name="Louout" Click="Louout_Click" />
+                      <telerik:RadButton   Content="修改密码" Name="SetPassWord"    HorizontalAlignment="Right" Click="SetPassWord_Click" />
+                    </telerik:RadToolBar>
+                    <telerik:RadToolBar  Background="LightBlue" Width="120" Height="25"   toolkit:DockPanel.Dock="Right"   VerticalAlignment="Stretch" HorizontalAlignment="Stretch" OverflowButtonVisibility="Collapsed" >
+                     <TextBlock Text="当前用户："  Margin="0"></TextBlock>
+                     <TextBlock x:Name="CurrentUser" Foreground="Beige"   Margin="0"></TextBlock>
+                    </telerik:RadToolBar>
+                
+                    <telerik:RadMenu  Background="LightBlue" Height="25" DockPanel.Dock="Left" Name="menu"  >
+
+                    <!--<telerik:RadMenuItem   Width="100" Margin="0 3 0 0" Height="30"  Header="图书管理">
+                        <telerik:RadMenuItem.Icon>
+                            <Image Source="Image/book.ico"></Image>
+                        </telerik:RadMenuItem.Icon>
+                        <telerik:RadMenuItem Width="100" Height="30" Click="RadMenuItem_Click" Header="添加图书">
+                            <telerik:RadMenuItem.Icon>
+                                <Image Source="/Image/add_128.ico"></Image>
+                            </telerik:RadMenuItem.Icon>
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem  Width="100" Height="30" Click="RadMenuItem_Click_1"  Header="修改图书"/>
+                    </telerik:RadMenuItem>-->
+                </telerik:RadMenu>
+                    
+                </DockPanel>
+   
+            <telerik:RadTabControl Background="LightBlue" Margin="3 0 3 5"  Name="tabcontrols"   BorderThickness="1" BorderBrush="Transparent"
+              HorizontalAlignment="Stretch" VerticalAlignment="Stretch"  HeaderBackground="LightBlue"  >
+            </telerik:RadTabControl>
+        </DockPanel>
+        </Border>
+    </telerik:RadBusyIndicator>
+</Window>

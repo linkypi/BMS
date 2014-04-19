@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="802aa12d-267c-46d3-8c90-ba57659fc4bc" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:10211/BMSService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="BMSService.wsdl" MetadataType="Wsdl" ID="6aa5a0d4-72be-4a60-9f59-85b5894b7b75" SourceId="1" SourceUrl="http://localhost:10211/BMSService.svc/BMSService/metadata?wsdl" />
+    <MetadataFile FileName="metadata.xsd" MetadataType="Schema" ID="cb5b236c-9c11-47f6-bfa4-a146c411e2dd" SourceId="1" SourceUrl="http://localhost:10211/BMSService.svc/BMSService/metadata?xsd=xsd1" />
+    <MetadataFile FileName="metadata1.xsd" MetadataType="Schema" ID="5c4107bb-5f82-40e4-85e4-afb3bbd79993" SourceId="1" SourceUrl="http://localhost:10211/BMSService.svc/BMSService/metadata?xsd=xsd2" />
+    <MetadataFile FileName="metadata2.xsd" MetadataType="Schema" ID="d95ccbed-c62c-4608-ae09-e6a67884727d" SourceId="1" SourceUrl="http://localhost:10211/BMSService.svc/BMSService/metadata?xsd=xsd3" />
+    <MetadataFile FileName="metadata3.xsd" MetadataType="Schema" ID="ad6ff5fc-32e6-41d6-849e-2fafd0c9eb2b" SourceId="1" SourceUrl="http://localhost:10211/BMSService.svc/BMSService/metadata?xsd=xsd0" />
+    <MetadataFile FileName="metadata.disco" MetadataType="Disco" ID="35f3c45d-4024-42e0-9e7b-558d7ccda5ee" SourceId="1" SourceUrl="http://localhost:10211/BMSService.svc/BMSService/metadata?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

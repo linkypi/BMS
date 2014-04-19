@@ -1,0 +1,11 @@
+C:\Users\lenovo\Desktop\BMS\DAL\obj\Debug\AccessDAL.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\BMS\DAL\obj\Debug\DAL.pdb
+C:\Users\lenovo\Desktop\BMS\DAL\bin\Debug\DAL.dll
+C:\Users\lenovo\Desktop\BMS\DAL\bin\Debug\DAL.pdb
+C:\Users\lenovo\Desktop\BMS\DAL\bin\Debug\IDAL.dll
+C:\Users\lenovo\Desktop\BMS\DAL\bin\Debug\Model.dll
+C:\Users\lenovo\Desktop\BMS\DAL\bin\Debug\OleDbHelper.dll
+C:\Users\lenovo\Desktop\BMS\DAL\bin\Debug\IDAL.pdb
+C:\Users\lenovo\Desktop\BMS\DAL\bin\Debug\Model.pdb
+C:\Users\lenovo\Desktop\BMS\DAL\bin\Debug\OleDbHelper.pdb
+C:\Users\lenovo\Desktop\BMS\DAL\obj\Debug\DAL.dll

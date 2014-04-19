@@ -1,0 +1,12 @@
+C:\Users\lenovo\Desktop\BMS\Model\bin\Debug\Model.dll
+C:\Users\lenovo\Desktop\BMS\Model\bin\Debug\Model.pdb
+C:\Users\lenovo\Desktop\BMS\Model\obj\Debug\Model.dll
+C:\Users\lenovo\Desktop\BMS\Model\obj\Debug\Model.pdb
+D:\BMS\Model\bin\Debug\Model.dll
+D:\BMS\Model\bin\Debug\Model.pdb
+D:\BMS\Model\obj\Debug\Model.dll
+D:\BMS\Model\obj\Debug\Model.pdb
+C:\Users\Administrator\Desktop\BMS\Model\bin\Debug\Model.dll
+C:\Users\Administrator\Desktop\BMS\Model\bin\Debug\Model.pdb
+C:\Users\Administrator\Desktop\BMS\Model\obj\Debug\Model.dll
+C:\Users\Administrator\Desktop\BMS\Model\obj\Debug\Model.pdb

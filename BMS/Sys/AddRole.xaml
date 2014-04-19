@@ -1,0 +1,43 @@
+﻿<Page x:Class="BMS.Sys.AddRole"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      mc:Ignorable="d" 
+        xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"  
+	Title="AddRole">
+
+    <telerik:RadBusyIndicator  Name="busy">
+        <DockPanel>
+            <DockPanel DockPanel.Dock="Top">
+                <telerik:RadMenu x:Name="radMenu"   Background="LightBlue" DockPanel.Dock="Top" ClickToOpen="False" FontSize="12" >
+
+                    <telerik:RadMenuItem x:Name="Save" Click="Save_Click" Header="保存"/>
+
+                </telerik:RadMenu>
+            </DockPanel>
+            <DockPanel DockPanel.Dock="Top" Height="26">
+                <StackPanel Orientation="Horizontal" Margin="3,2">
+                    <TextBlock Width="80" Text="角色名称"></TextBlock>
+                    <TextBox Width="120" x:Name="roleName"></TextBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="3,2">
+                    <TextBlock Width="80" Text="备注"></TextBlock>
+                    <TextBox Width="120" x:Name="note"></TextBox>
+                </StackPanel>
+            </DockPanel>
+            <DockPanel DockPanel.Dock="Bottom" >
+
+                <DockPanel DockPanel.Dock="Bottom">
+                    <telerik:RadButton  CornerRadius="3" Content="全 选" Width="80" Height="23" Margin="5,0" DockPanel.Dock="Left" x:Name="SelectAll" Click="SelectAll_Click_1"/>
+                    <telerik:RadButton  CornerRadius="3"   Content="反 选" Width="80" Height="23" Margin="5,0"  DockPanel.Dock="Left"  Click="UnSelect"/>
+                </DockPanel>
+
+                <telerik:RadTreeView DockPanel.Dock="Top" Background="White"   SelectionMode="Single" IsLineEnabled="True"
+				    ItemsOptionListType="CheckList" IsOptionElementsEnabled="True"      
+				    IsRootLinesEnabled="True" x:Name="RadTreeView1" IsTriStateMode="True" />
+
+            </DockPanel>
+        </DockPanel>
+    </telerik:RadBusyIndicator>
+</Page>

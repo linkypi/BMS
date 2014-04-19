@@ -1,0 +1,110 @@
+﻿<Window x:Class="BMS.Login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+	 xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+      Loaded="Page_Loaded"  Background="{x:Null}"    MouseLeftButtonDown="DragWindow"
+       
+      mc:Ignorable="d"  WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen"
+	Title="Login">
+    <Window.Resources>
+        
+      
+
+
+        <Style x:Key="ButtonStyle" TargetType="{x:Type Button}">
+            <!--<Setter Property="Content">
+                <Setter.Value>
+                    <Image Source="/BMS;component/Image/close32_blue.png" Height="16" Width="16" HorizontalAlignment="Left"></Image>
+                </Setter.Value>
+            </Setter>-->
+            <Setter Property="Template">
+                <Setter.Value>
+                    <!--设置样式 -->
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Image Source="/BMS;component/Image/close32_blue.png" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="16" Width="16" ></Image>
+                        </Grid>
+                        <!-- 设置鼠标移到关闭按钮上的效果 -->
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="true">
+                                <Setter Property="Cursor" Value="Hand"></Setter>
+                                <Setter Property="Content">
+                                    <Setter.Value>
+                                        <Image Source="/BMS;component/Image/close32_red.png" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="16" Width="16" ></Image>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <telerik:RadBusyIndicator Name="busy" IsBusy="False">
+
+        <Border CornerRadius="10,10,10,10" Background="LightBlue" Height="Auto" BorderBrush="Teal" BorderThickness="1">
+            <toolkit:DockPanel FlowDirection="LeftToRight" >
+
+                <!--<toolkit:DockPanel FlowDirection="LeftToRight" Width="70" DockPanel.Dock="Left">
+                </toolkit:DockPanel>-->
+                <toolkit:DockPanel FlowDirection="LeftToRight" Margin="70 0 0 0" >
+                    <toolkit:DockPanel FlowDirection="LeftToRight"  DockPanel.Dock="Top" Height="96">
+                       <!-- <DockPanel DockPanel.Dock="Left" Height="96">
+                            <Image Width="96" Height="96" Source="/BMS;component/bin/Debug/b96_1.png" ></Image>
+                        </DockPanel>-->
+                        <DockPanel DockPanel.Dock="Right">
+                            <TextBlock FontSize="22" Margin="20 30 0 0">华诺信诚图书管理系统</TextBlock>
+                        </DockPanel>
+                    </toolkit:DockPanel>
+                    <WrapPanel FlowDirection="LeftToRight"  Width="180">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock  Width="50" Height="23">用户名：</TextBlock>
+                            <TextBox Name="username" Width="130" Height="23" KeyDown="pwd_KeyDown"></TextBox>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Width="150" Height="23">
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock  Width="50" Height="23">密码：</TextBlock>
+                            <PasswordBox  Height="23" Width="130" Name="pwd"  KeyDown="pwd_KeyDown" />
+                            <!--<TextBox Name="pwd" Width="130"   Height="23" UseLayoutRounding="False"></TextBox>-->
+                        </StackPanel>
+                        <!--<StackPanel Orientation="Horizontal" Width="150" Height="23">
+                    </StackPanel>-->
+                        <!--<StackPanel Orientation="Horizontal"  Width="190">
+                        <TextBlock  Width="50" Height="23">身份：</TextBlock>
+                        <RadioButton  Name="admin" Content="管理员" Width="60" Height="23"></RadioButton>
+                        <RadioButton Name="cususer" Margin="8 0 0 0" Content="普通员工" Width="70" Height="23"></RadioButton>
+
+                    </StackPanel>-->
+                        <StackPanel Orientation="Horizontal" Width="150" Height="23">
+                            <TextBlock Name="errorMsg" ></TextBlock>
+                        </StackPanel>
+
+
+                        <StackPanel  Width="180" Height="23" >
+                            <telerik:RadButton CornerRadius="3" Width="80" Height="23"  HorizontalAlignment="Right" Click="RadButton_Click">
+                                <telerik:RadButton.Content>
+                                    <StackPanel  Orientation="Horizontal">
+                                    <!--<Image  Height="16" Width="16" HorizontalAlignment="Left"></Image>-->
+                                        <TextBlock Text="登录" HorizontalAlignment="Right"></TextBlock>
+                                    </StackPanel>
+                                </telerik:RadButton.Content>
+                            </telerik:RadButton>
+                        </StackPanel>
+                    </WrapPanel>
+                </toolkit:DockPanel>
+                <!--左上角的“X”叉形按钮 Width="450" Height="300"-->
+                <DockPanel DockPanel.Dock="Right">
+                    <Button Name="Button1" Style="{StaticResource ButtonStyle}"  Click="CloseWindow"
+                      Width="24" Height="24" 
+                        HorizontalAlignment="Right" VerticalAlignment="Top" Margin="3,3,3,3"></Button>
+                </DockPanel>
+                
+
+            </toolkit:DockPanel>
+        </Border>
+    </telerik:RadBusyIndicator>
+</Window>

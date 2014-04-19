@@ -1,0 +1,11 @@
+C:\Users\lenovo\Desktop\BMS\SqlDAL\bin\Debug\SqlDAL.dll
+C:\Users\lenovo\Desktop\BMS\SqlDAL\bin\Debug\SqlDAL.pdb
+C:\Users\lenovo\Desktop\BMS\SqlDAL\bin\Debug\IDAL.dll
+C:\Users\lenovo\Desktop\BMS\SqlDAL\bin\Debug\Model.dll
+C:\Users\lenovo\Desktop\BMS\SqlDAL\bin\Debug\OleDbHelper.dll
+C:\Users\lenovo\Desktop\BMS\SqlDAL\bin\Debug\IDAL.pdb
+C:\Users\lenovo\Desktop\BMS\SqlDAL\bin\Debug\Model.pdb
+C:\Users\lenovo\Desktop\BMS\SqlDAL\bin\Debug\OleDbHelper.pdb
+C:\Users\lenovo\Desktop\BMS\SqlDAL\obj\Debug\SqlDAL.csprojResolveAssemblyReference.cache
+C:\Users\lenovo\Desktop\BMS\SqlDAL\obj\Debug\SqlDAL.dll
+C:\Users\lenovo\Desktop\BMS\SqlDAL\obj\Debug\SqlDAL.pdb
